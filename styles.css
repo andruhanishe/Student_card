@@ -1,0 +1,176 @@
+h1 {
+    text-align: center;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container {
+    border-bottom: 1px solid black;
+    padding: 0 50px 30px 50px;
+}
+
+.container h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #607c99;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.avatar img{
+    width: 140px;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.25);
+}
+
+.about {
+    flex-basis: 50%;
+}
+
+.about ul {
+    list-style-type: none;
+}
+
+.about li {
+    margin-bottom: 10px;
+}
+
+.about ul p {
+    margin: 0;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.goals {
+    counter-reset: li; 
+    list-style: none; 
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.goals a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #dff2ff;
+    color: #669;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s ease-out;
+    }
+
+.goals a:hover {
+    background: #ffffff;
+}
+
+.goals a:hover:before {
+    transform: rotate(360deg);
+}
+
+.goals a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #c7ede3;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.study {
+    margin: 0 auto;
+    border-spacing: 10px 0;
+}
+
+.study thead td {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.study tbody td {
+    padding: 15px 10px;
+}
+
+.study .list td {
+    padding: 10px 0;
+    background-color: #4b81bd;
+}
+
+.study .list .holiday {
+    padding: 10px 0;
+    background-color: #ff0000;
+}
+
+.study .hours td {
+    background-color: #fdfdfd;
+    box-shadow: 0 5px 2px rgba(0,0,0,0.25), 0 3px 2px rgba(0,0,0,0.22);
+}
+
+.courses {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.courses td {
+    width: 25%;
+    padding: 10px 8px;
+}
+
+.courses thead td {
+    font-weight: bold;
+    color: #039;
+    background-color: #dff2ff;
+}
+
+.courses tbody td {
+    color: #669;  
+    border-top: 1px solid #e8edff;
+    transition: .3s linear;
+}
+
+.courses tbody tr:hover td {
+    background: #dff2ff;
+}
+
+.footer-style .container {
+    border-bottom: none;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts a {
+    padding: 0 40px;
+}
+
+.contacts a img {
+    width: 48px;
+    border-radius: 50%;
+}
+
+.contacts a img:hover {
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.25);
+}
+
